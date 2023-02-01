@@ -50,3 +50,10 @@ compile_commands.json
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
+obj-x86_64-linux-gnu
+.vscode
+debian/.debhelper
+debian/youi/*
+debian/youi.substvars
+debian/youi.debhelper.log
+debian/files

@@ -1,0 +1,11 @@
+youi (0.8-1) UNRELEASED; urgency=high
+
+  * fix dark theme
+
+ -- weilinfox <support@yzzi.icu>  Fri, 10 Jun 2022 16:20:21 +0800
+
+youi (0.8) UNRELEASED; urgency=high
+
+  * Initial release (YoyoOS)  <support@yzzi.icu>
+
+ -- YoyoOS Packaging Team <support@yzzi.icu>  Sat, 29 Jan 2022 03:23:53 +0800
