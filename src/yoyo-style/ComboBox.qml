@@ -97,6 +97,12 @@ T.ComboBox {
                 easing.type: Easing.Linear
             }
         }
+        Behavior on color {
+            ColorAnimation {
+                duration: 200
+                easing.type: Easing.Linear
+            }
+        }
     }
 
     popup: T.Popup {
