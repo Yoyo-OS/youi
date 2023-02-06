@@ -57,3 +57,4 @@ debian/youi/*
 debian/youi.substvars
 debian/youi.debhelper.log
 debian/files
+build

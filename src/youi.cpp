@@ -122,6 +122,7 @@ void Youi::registerTypes(const char *uri)
 
     youiRegisterType(uri, controlsUri, 1, 0, "AboutDialog","controls/");
     youiRegisterType(uri, controlsUri, 1, 0, "ActionTextField","controls/");
+    youiRegisterType(uri, controlsUri, 1, 0, "AppWindow","controls/");
     youiRegisterType(uri, controlsUri, 1, 0, "BusyIndicator","controls/");
     youiRegisterType(uri, controlsUri, 1, 0, "PopupTips","controls/");
     youiRegisterType(uri, controlsUri, 1, 0, "RoundedRect","controls/");

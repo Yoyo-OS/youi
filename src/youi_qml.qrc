@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/youi/kit/qml">
         <file>controls/AboutDialog.qml</file>
+        <file>controls/AppWindow.qml</file>
         <file>controls/Icon.qml</file>
         <file>controls/TextButton.qml</file>
         <file>controls/RoundImageButton.qml</file>
