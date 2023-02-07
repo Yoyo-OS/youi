@@ -130,6 +130,8 @@ T.Button {
                 ColorAnimation {
                     duration: 200
                     easing.type: Easing.Linear
+             }
+            }
         }
     }
 }
