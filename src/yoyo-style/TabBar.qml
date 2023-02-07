@@ -40,14 +40,7 @@ T.TabBar {
                 color: Youi.Theme.darkMode ? Qt.lighter(Youi.Theme.secondBackgroundColor, 2)
                                              : Youi.Theme.secondBackgroundColor
                 radius: Youi.Theme.smallRadius
-                border.color: Youi.Theme.borderColor
-                border.width: 1
-                Behavior on border.color {
-                    ColorAnimation {
-                        duration: 200
-                        easing.type: Easing.Linear
-                    }
-                }
+
                 layer.enabled: Youi.Theme.darkMode
                 layer.effect: DropShadow {
                     transparentBorder: true

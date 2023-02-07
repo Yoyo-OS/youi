@@ -7,7 +7,7 @@ T.TabButton {
 
     property int standardHeight: Youi.Units.iconSizes.medium + Youi.Units.smallSpacing
     property color pressedColor: Qt.rgba(Youi.Theme.textColor.r, Youi.Theme.textColor.g, Youi.Theme.textColor.b, 0.5)
-    property color textColor: !control.enabled ? Youi.Theme.disabledTextColor : control.pressed ? pressedColor : control.checked ? Youi.Theme.textColor : Youi.Theme.textColor
+
     implicitWidth: Math.max(background ? background.implicitWidth : 0,
                             contentItem.implicitWidth + leftPadding + rightPadding)
     implicitHeight: Math.max(background ? background.implicitHeight : 0,
@@ -24,6 +24,6 @@ T.TabButton {
 
         text: control.text
         font: control.font
-        color: control.textColor
+        color: !control.enabled ? Youi.Theme.disabledTextColor : control.pressed ? pressedColor : control.checked ? Youi.Theme.textColor : Youi.Theme.textColor
     }
 }
