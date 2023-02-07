@@ -1,3 +1,22 @@
+/*
+ * Copyright (C) 2021 CutefishOS Team.
+ *
+ * Author:     Reion Wong <reion@cutefishos.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 import QtQuick 2.12
 import QtQuick.Templates 2.12 as T
 import QtGraphicalEffects 1.0
@@ -45,16 +64,18 @@ T.Button {
     }
 
     background: Item {
-        implicitWidth: Youi.Units.iconSizes.smallMedium * 4
-        implicitHeight: Youi.Units.iconSizes.smallMedium + 6
+        implicitWidth: (Youi.Units.iconSizes.medium * 3) + Youi.Units.largeSpacing
+        implicitHeight: Youi.Units.iconSizes.medium + Youi.Units.smallSpacing
 
         Rectangle {
             id: _flatBackground
             anchors.fill: parent
-            radius: Youi.Theme.smallRadius
+            radius: Youi.Theme.mediumRadius
             border.width: 1
+            border.color: control.enabled ? control.activeFocus ? Youi.Theme.highlightColor : "transparent"
+                                          : "transparent"
             visible: control.flat
-            border.color: "transparent"
+
             color: {
                 if (!control.enabled)
                     return Youi.Theme.alternateBackgroundColor
@@ -81,10 +102,10 @@ T.Button {
         Rectangle {
             id: _background
             anchors.fill: parent
-            radius: Youi.Theme.smallRadius
+            radius: Youi.Theme.mediumRadius
             border.width: 1
             visible: !control.flat
-            border.color: control.enabled ? Youi.Theme.borderColor
+            border.color: control.enabled ? control.activeFocus ? Youi.Theme.highlightColor : "transparent"
                                           : "transparent"
 
             color: {
@@ -109,8 +130,6 @@ T.Button {
                 ColorAnimation {
                     duration: 200
                     easing.type: Easing.Linear
-                }
-            }
         }
     }
 }

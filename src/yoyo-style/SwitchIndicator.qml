@@ -3,8 +3,8 @@ import Youi 1.0 as Youi
 
 Item {
     id: indicator
-    implicitWidth: Youi.Units.iconSizes.medium +6
-    implicitHeight: Youi.Units.iconSizes.smallMedium -2
+    implicitWidth: 38
+    implicitHeight: 32
 
     property Item control
     property alias handle: handle
