@@ -240,14 +240,6 @@ Window {
             property int buttonSize: 31
             property int spacing: (_header.height - _header.buttonSize) / 2
 
-            MouseArea{
-                anchors.fill: parent
-                propagateComposedEvents: true
-                onClicked: {
-                     mouse.accepted = false
-                }
-            }
-
             Rectangle {
                 id: _headerBackground
                 anchors.fill: parent
